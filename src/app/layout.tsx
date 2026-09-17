@@ -28,7 +28,9 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="min-h-screen bg-gradient-to-br from-orange-50 via-rose-50 to-amber-100 antialiased dark:from-neutral-950 dark:via-stone-900 dark:to-neutral-950">
+        {children}
+      </body>
     </html>
   );
 }

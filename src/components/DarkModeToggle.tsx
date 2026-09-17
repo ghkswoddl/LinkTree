@@ -21,7 +21,7 @@ export default function DarkModeToggle() {
       type="button"
       onClick={toggleTheme}
       aria-label="다크모드 전환"
-      className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 bg-white text-neutral-600 shadow-sm transition hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+      className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full border border-white/60 bg-white/40 text-neutral-600 shadow-sm backdrop-blur-md transition-colors duration-200 hover:bg-white/60 dark:border-white/10 dark:bg-white/5 dark:text-neutral-300 dark:hover:bg-white/10"
     >
       {isDark ? "🌙" : "☀️"}
     </button>

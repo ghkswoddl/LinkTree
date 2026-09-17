@@ -3,14 +3,14 @@ import type { Profile } from "@/lib/profile";
 
 export default function ProfileHeader({ profile }: { profile: Profile }) {
   return (
-    <div className="flex flex-col items-center gap-3 pt-10">
-      <div className="h-24 w-24 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-700">
+    <div className="flex flex-col items-center gap-4 pt-14">
+      <div className="h-28 w-28 overflow-hidden rounded-full bg-neutral-200 shadow-[0_10px_30px_-8px_rgba(120,80,60,0.4)] ring-4 ring-white/80 dark:bg-neutral-700 dark:shadow-[0_10px_30px_-8px_rgba(0,0,0,0.6)] dark:ring-white/10">
         {profile.avatarUrl ? (
           <Image
             src={profile.avatarUrl}
             alt={profile.name}
-            width={96}
-            height={96}
+            width={112}
+            height={112}
             className="h-full w-full object-cover"
           />
         ) : (
@@ -20,8 +20,8 @@ export default function ProfileHeader({ profile }: { profile: Profile }) {
         )}
       </div>
       <div className="text-center">
-        <h1 className="text-lg font-bold">{profile.name}</h1>
-        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+        <h1 className="text-lg font-bold tracking-tight">{profile.name}</h1>
+        <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
           {profile.bio}
         </p>
       </div>
